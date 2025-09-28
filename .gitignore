@@ -1,7 +1,29 @@
 # Dependencies
 node_modules/
-*/node_modules/
-**/node_modules/
+packages/**/node_modules/
+
+# OS
+.DS_Store
+
+# Env
+.env
+.env.*
+
+# Next.js
+packages/frontend/.next/
+packages/frontend/out/
+packages/frontend/.turbo/
+packages/frontend/.vercel/
+
+# Hardhat artifacts & cache
+packages/fhevm-hardhat-template/artifacts/
+packages/fhevm-hardhat-template/cache/
+packages/fhevm-hardhat-template/deployments/localhost/
+
+# Dependencies
+# node_modules/
+# */node_modules/
+# **/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

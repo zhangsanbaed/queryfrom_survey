@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 const getBasePath = () => {
   const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || '';
   const isUserSite = repoName.endsWith('.github.io');
-  return isUserSite ? '' : repoName;
+  return isUserSite ? '' : `/${repoName}`;
 };
 
 const nextConfig: NextConfig = {
