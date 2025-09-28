@@ -1,0 +1,27 @@
+{
+  "name": "confidential-health-surveys",
+  "version": "1.0.0",
+  "description": "Privacy-preserving health survey platform using FHEVM",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "cd ./packages/frontend/ && npm run genabi",
+    "install:all": "npm install && cd packages/fhevm-hardhat-template && npm install && cd ../frontend && npm install",
+    "dev:hardhat": "cd packages/fhevm-hardhat-template && npx hardhat node --verbose",
+    "dev:frontend": "cd packages/frontend && npm run dev:mock",
+    "dev:frontend:prod": "cd packages/frontend && npm run dev",
+    "deploy:local": "cd packages/fhevm-hardhat-template && npx hardhat deploy --network localhost",
+    "deploy:sepolia": "cd packages/fhevm-hardhat-template && npx hardhat deploy --network sepolia",
+    "test": "cd packages/fhevm-hardhat-template && npm test",
+    "compile": "cd packages/fhevm-hardhat-template && npx hardhat compile",
+    "build:static": "cd packages/frontend && npm run build:static",
+    "deploy:github": "./scripts/deploy.sh"
+  }
+}
+
