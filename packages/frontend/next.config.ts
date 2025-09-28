@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 // 自动推导 basePath，根据仓库名是否为 用户名.github.io 自动设置为空或 /<repo>
 const getBasePath = () => {
   const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || '';
+  if (!repoName) return '';
   const isUserSite = repoName.endsWith('.github.io');
   return isUserSite ? '' : `/${repoName}`;
 };
