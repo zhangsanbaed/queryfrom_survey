@@ -111,6 +111,4 @@ fhevmTemp/
 *.tmp
 *.temp
 
-# Package-lock files (keep one, remove others)
-package-lock.json
-yarn.lock
+# Lock files should be committed for reproducible builds
