@@ -2,6 +2,8 @@
 
 A privacy-preserving health survey platform built with FHEVM (Fully Homomorphic Encryption Virtual Machine) that enables researchers to collect sensitive health data while maintaining complete privacy protection.
 
+> 🌐 **Live Demo**: [https://zhangsanbaed.github.io/queryform/](https://zhangsanbaed.github.io/queryform/)
+
 ## 🔒 Privacy Features
 
 - **End-to-End Encryption**: All responses are encrypted on the user's device using FHEVM
