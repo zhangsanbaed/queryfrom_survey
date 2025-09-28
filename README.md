@@ -2,7 +2,7 @@
 
 A privacy-preserving health survey platform built with FHEVM (Fully Homomorphic Encryption Virtual Machine) that enables researchers to collect sensitive health data while maintaining complete privacy protection.
 
-> 🌐 **Live Demo**: [https://zhangsanbaed.github.io/queryform/](https://zhangsanbaed.github.io/queryform/)
+> 🌐 **Live Demo**: [https://zhangsanbaed.github.io/queryfrom_survey/](https://zhangsanbaed.github.io/queryfrom_survey/)
 
 ## 🔒 Privacy Features
 
@@ -192,7 +192,7 @@ This is a demonstration project for educational purposes. For production use, pl
 
 ## 🆘 Support
 
-- [GitHub Issues](https://github.com/your-org/confidential-health-surveys/issues)
+- [GitHub Issues](https://github.com/zhangsanbaed/queryfrom_survey/issues)
 - [Discord Community](https://discord.gg/zama)
 - [Documentation](https://docs.zama.ai/)
 
